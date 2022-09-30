@@ -12,14 +12,15 @@ while True:
     else:
         break
 
+# Why did line 26 give TypeError for list indices before converted into integers? and it fixed after int()
+
 
 numbers.sort()
-print(numbers)
+
 l = len(numbers)
-print(l)
 if not( (l % 2) == 0):
-   print(numbers[int(floor(l/2))])
-   print(l)
+   print(numbers[int(math.floor(l/2))])
+
 else:
     print(l)
     print( (numbers[int(l/2) ] + numbers[int( (l/2)-1 ) ] )/2  )  
